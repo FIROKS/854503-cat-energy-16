@@ -3,6 +3,7 @@
   margin: 0;
   padding: 10px 0;
   background-color: #ffffff;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .header .container {
@@ -27,7 +28,7 @@
 
 .header__nav-list {
   width: 320px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -36,10 +37,6 @@
   margin: 0;
   padding: 24px 5px;
   text-align: center;
-  border-top: 1px solid #d9d9d9;
-}
-
-.header__nav-item:last-child {
   border-bottom: 1px solid #d9d9d9;
 }
 
