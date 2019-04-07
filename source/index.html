@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  </body>
+<body class="index">
+  <header class="header">
+    <div class="container">
+      <a class="logo">
+        <img class="logo__img" src="img/logo-mobile.svg" width="190" height="40" alt="Логотип сайта Cat Energy" >
+      </a>
+      <div class="header__menu"></div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link">Главная</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Каталог продукции</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="promo">
+      <div class="container">
+        <h1 class="promo__title">Функциональное питание для котов</h1>
+        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <img class="promo__img" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Изображение продукта Cat Energy PRO">
+        <a href="form.html" class="button">Подобрать программу</a>
+      </div>
+    </section>
+
+    <section class="effects">
+      <h2 class="visually-hidden"></h2>
+      <div class="container">
+        <article class="article">
+          <h3 class="article__title article__title--slim">Похудение</h3>
+          <p class="article__desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
+            диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a href="#" class="article__to-catalog">Каталог Slim</a>
+        </article>
+        <article class="article">
+          <h3 class="article__title article__title--pro">Набор массы</h3>
+          <p class="article__desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
+            вашему коту нарастить необходимые мышцы!</p>
+          <a href="#" class="article__to-catalog">Каталог Slim</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="hiw">
+      <div class="container">
+        <h2 class="title">Как это работает</h2>
+        <ul class="hiw__list">
+          <li class="hiw__item">
+            <p class="hiw__desc hiw__desc--leaf">Функциональное питание содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="hiw__item">
+            <p class="hiw__desc hiw__desc--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и
+              готово.
+            </p>
+          </li>
+          <li class="hiw__item">
+            <p class="hiw__desc hiw__desc--fork">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="hiw__item">
+            <p class="hiw__desc hiw__desc--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="live-example">
+      <div class="container">
+        <h2 class="title">Живой пример</h2>
+        <p class="live-example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+          16 часов в день. </p>
+        <div class="live-example__stats">
+          <div class="box">
+            <span class="box__main">5 кг</span>
+            <p class="box__sub">снижение веса</p>
+          </div>
+          <div class="box">
+            <span class="box__main">60 дней</span>
+            <p class="box__sub">затрачено времени</p>
+          </div>
+        </div>
+        <p class="live-example__cost">Затраты на питание: 15 000 руб.</p>
+        <div class="slider">
+          <img class="slider__img" src="" alt="">
+          <div class="slider__controls">
+            <span>Было</span>
+            <div></div>
+            <span>Стало</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <div class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+     </div>
+    </section>
+    <div class="map"></div>
+    <div class="container">
+      <div class="footer__logo-container">
+        <a class="logo">
+          <img class="logo__img--only-text" src="img/logo-footer.svg" alt="Логотип сайта Cat Energy" width="128" height="24">
+        </a>
+      </div>
+      <ul class="footer__social-list">
+        <li class="footer__social-item"><a href="#" class="footer__social-link footer__social-link--vk">Мы Вконтакте</a>
+        </li>
+        <li class="footer__social-item"><a href="#" class="footer__social-link footer__social-link--inst">Мы в Instagram</a>
+        </li>
+        <li class="footer__social-item"><a href="#" class="footer__social-link footer__social-link--fc">Мы в Facebook</a>
+        </li>
+      </ul>
+      <div class="footer__lowest-container">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright-link">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright-logo">
+          <svg class="copyright-logo__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
