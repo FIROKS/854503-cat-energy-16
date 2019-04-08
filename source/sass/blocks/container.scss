@@ -7,3 +7,9 @@
 .container--no-pad {
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+  }
+}
