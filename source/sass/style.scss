@@ -1,4 +1,5 @@
 @import "scaffolding.scss";
+
 @import "variables.scss";
 @import "mixins.scss";
 @import "blocks/gg.scss";
@@ -19,7 +20,16 @@
 @import "blocks/map.scss";
 @import "blocks/catalog.scss";
 @import "blocks/product.scss";
-
+@import "blocks/plus.scss";
+@import "blocks/additional.scss";
+@import "blocks/present.scss";
 
 
 @import "normalize.scss";
+
+// @mixin list {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+//   background-color: red;
+// }

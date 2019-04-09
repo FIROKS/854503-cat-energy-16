@@ -1,0 +1,20 @@
+.plus {
+  position: relative;
+  width: 31px;
+  height: 31px;
+}
+
+.plus::before,
+.plus::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+}
+
+.plus::after {
+  transform: rotate(90deg);
+}
