@@ -1,0 +1,139 @@
+.program__inv{
+  font-size: 14px;
+  color: #111111;
+}
+
+.program__form {
+  margin: 0;
+  padding: 0;
+}
+
+.program__fieldset {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  border: none;
+}
+
+.program__fieldset--border {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.program__list {
+  @include list-reset;
+  padding: 25px 0;
+}
+
+.program__item {
+  margin-bottom: 18px;
+}
+
+.program__item:last-child {
+  margin-bottom: 0;
+}
+
+.program__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.program__input {
+  flex-grow: 1;
+  margin: 0;
+  margin-left: 15px;
+  padding: 12px 15px;
+  font: inherit;
+  text-transform: inherit;
+  color: #444444;
+  border: 1px solid #e6e6e6;
+}
+
+.choice {
+  position: relative;
+  padding-left: 45px;
+}
+
+.choice__radio{
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+[type="radio"]:checked + .choice__radio::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 12px;
+  height: 12px;
+  background-color: $main-color;
+  border-radius: 50%;
+}
+
+.program__comment {
+  width: 280px;
+  height: 150px;
+  margin: 0;
+  padding: 15px;
+  padding-right: 10px;
+  font: inherit;
+  color: #444444;
+  text-transform: inherit;
+  border: 1px solid #e6e6e6;
+  resize: none;
+}
+
+.program__comment::-webkit-input-placeholder {
+  color:#444444;
+}
+
+.program__comment::-moz-placeholder {
+  color: #444444
+  ;
+}
+
+.program__comment:-moz-placeholder {
+  color: #444444;
+}
+
+.program__comment:-ms-input-placeholder {
+  color: #444444;
+}
+
+.choice__check{
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+}
+
+[type="checkbox"]:checked + .choice__check::before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 22px;
+  height: 17px;
+  background: url(../../img/icon-tick.svg) center center no-repeat;
+}
+
+.program__hint {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+  text-transform: none;
+}
+

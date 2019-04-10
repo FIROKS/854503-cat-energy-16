@@ -34,6 +34,7 @@
 
   <main class="main">
     <section class="program">
+      <div class="container">
       <h1 class="title">Подбор программы</h1>
       <p class="program__inv">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="program__form" action="https://echo.htmlacademy.ru.">
@@ -48,27 +49,38 @@
             <input type="text" class="program__input" name="weight" placeholder="7">
           </label>
           <label class="program__label">
-            Вес (кг):*
+            Возраст (лет):
             <input type="text" class="program__input" name="age" placeholder="7">
           </label>
         </fieldset>
-        <fieldset class="program__fieldset">
+        <fieldset class="program__fieldset program__fieldset--border">
           <legend class="visually-hidden">Тип диеты</legend>
+          <ul class="program__list">
+              <li class="program__item">
           <label class="choice">
-            <input type="radio" class="choice__input" name="diet-type" value="weight loss">
+						<input type="radio" class="visually-hidden" name="diet-type" value="weight loss" checked>
+						<span class="choice__radio"></span>
             Похудение
           </label>
-          <label class="program__label">
-            <input type="radio" class="choice__input" name="diet-type" value="weight gain">
+        </li>
+          <li class="program__item">
+          <label class="choice">
+            <input type="radio" class="visually-hidden" name="diet-type" value="weight gain">
+            <span class="choice__radio"></span>
             Набор массы
           </label>
-          <label class="program__label">
-            <input type="radio" class="choice__input" name="diet-type" value="need advice">
+        </li>
+          <li class="program__item">
+          <label class="choice">
+            <input type="radio" class="visually-hidden" name="diet-type" value="need advice">
+            <span class="choice__radio"></span>
             Не знаю (Нужен ваш совет)
           </label>
+        </li>
+        </ul>
         </fieldset>
-        <fieldset class="program__fieldset program__fieldset--line">
-          <legend class="title--sm title--line">Контактные данные (владельца кота)</legend>
+        <fieldset class="program__fieldset">
+          <legend class="title title--sm">Контактные данные (владельца кота)</legend>
           <label class="program__label">
             E-mail:*
             <input type="email" class="program__input program__input--email" name="email"
@@ -79,37 +91,42 @@
             <input type="tel" class="program__input program__input--tel" name="tel" placeholder="8 (960) 900-60-90">
           </label>
         </fieldset>
-        <fieldset class="program__fieldset program__fieldset--line">
-          <legend class="title--sm title--line">Комментарий</legend>
-          <label class="visually-hidden">
-            <textarea class="program__comment" name="comment" cols="35"
-              rows="5">Расскажите обо всех повадках кота</textarea>
-          </label>
+        <fieldset class="program__fieldset">
+          <legend class="title title--sm">Комментарий</legend>
+          <label class="visually-hidden" for="comment">Комментарий</label>
+            <textarea class="program__comment" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="program__fieldset program__fieldset--line">
-          <legend class="title--sm title--line">Дополнительно</legend>
+        <fieldset class="program__fieldset">
+          <legend class=" title title--sm">Дополнительно</legend>
           <ul class="program__list">
             <li class="program__item">
               <label class="choice">
-                <input type="checkbox" class="choice__input--check">
+                <input type="checkbox" class="visually-hidden" name="sweetener" checked>
+                <span class="choice__check"></span>
                 Сахарозаменитель
               </label>
             </li>
             <li class="program__item">
               <label class="choice">
-                <input type="checkbox" class="choice__input--check">
+                  <input type="checkbox" class="visually-hidden"
+                  name="water">
+                  <span class="choice__check"></span>
                 Питьевая вода
               </label>
             </li>
             <li class="program__item">
               <label class="choice">
-                <input type="checkbox" class="choice__input--check">
+                <input type="checkbox" class="visually-hidden"
+                name="milk">
+                <span class="choice__check"></span>
                 Молоко
               </label>
             </li>
             <li class="program__item">
               <label class="choice">
-                <input type="checkbox" class="choice__input--check">
+                <input type="checkbox" class="visually-hidden"
+                name="vitamins">
+                <span class="choice__check"></span>
                 Витамины
               </label>
             </li>
@@ -117,8 +134,9 @@
         </fieldset>
         <button class="button" type="submit">Отправить заявку</button>
       </form>
-      <span class="program__hint">* — Обязательные поля</span>
+      <p class="program__hint">* — Обязательные поля</p>
     </section>
+  </div>
   </main>
 
   <footer class="footer">
