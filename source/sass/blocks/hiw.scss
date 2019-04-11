@@ -1,0 +1,73 @@
+.hiw {
+  margin-bottom: 42px;
+}
+
+.hiw__list {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hiw__item {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.hiw__desc {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+}
+
+.hiw__desc::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.hiw__desc--leaf::after {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../../img/advantage-leaf@1x.png) center center no-repeat;
+}
+
+.hiw__desc--fork::after {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../../img/advantage-dining@1x.png) center center no-repeat;
+}
+
+.hiw__desc--powder::after {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../../img/advantage-powder@1x.png) center center no-repeat;
+}
+
+.hiw__desc--clock::after {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../../img/advantage-clock@1x.png) center center no-repeat;
+}
