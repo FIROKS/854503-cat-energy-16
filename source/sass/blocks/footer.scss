@@ -32,19 +32,16 @@ background-color: #f2f2f2;
 .footer__social-link--vk {
   width: 22px;
   height: 12px;
-  background: url(../../img/icon-vk-mobile.svg) no-repeat;
 }
 
 .footer__social-link--inst {
-  width: 17px;
+  width: 18px;
   height: 17px;
-  background: url(../../img/icon-insta-mobile.svg) no-repeat;
 }
 
-.footer__social-link--fc {
+.footer__social-link--fb {
   width: 10px;
   height: 19px;
-  background: url(../../img//icon-fb-mobile.svg) no-repeat;
 }
 
 .footer__lowest-container {
@@ -64,5 +61,6 @@ background-color: #f2f2f2;
   font-weight: 400;
   letter-spacing: normal;
   color: #444444;
+  text-transform: none;
 }
 

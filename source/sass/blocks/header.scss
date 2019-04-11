@@ -28,6 +28,9 @@
 
 .header__nav-list {
   width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
 }
 
 .header__nav-item {
@@ -41,6 +44,8 @@
   padding-bottom: 14px;
   border: none;
 }
+
+
 
 .header__nav-link {
   margin: 0;

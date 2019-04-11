@@ -1,10 +1,23 @@
 .promo {
   margin: 0;
-  margin-bottom: 20px;
   padding: 0;
   padding-top: 30px;
   background: url(../../img/index-background-mobile@1x.jpg)center 0 no-repeat;
 }
+
+@media  (min-width: $tablet-width) {
+  .promo {
+    background: transparent;
+  }
+}
+
+@media  (min-width: $tablet-width) {
+  .promo .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .promo__title {
   margin: 0;
   margin-bottom: 20px;
@@ -16,6 +29,14 @@
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+}
+
+@media  (min-width: $tablet-width) {
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+  }
 }
 
 .promo__slogan {
@@ -60,7 +81,9 @@
     color: #111111;
     text-align: left;
   }
+}
 
+@media  (min-width: $tablet-width) {
   .promo__img {
     width: 709px;
     height: 609px;
@@ -69,4 +92,3 @@
     z-index: -1;
   }
 }
-

@@ -1,0 +1,37 @@
+.additional__list {
+  @include list-reset;
+  width: 280px;
+}
+
+.additional__item {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #d9d9d9;
+}
+
+.additional__item:last-child {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.additional__title {
+  margin: 0;
+  padding: 0;
+  font-family: "oswaldregular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.additional__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addition__desc {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}

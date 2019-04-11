@@ -1,8 +1,9 @@
 .button {
   display: inline-block;
-  width: 280px;
+  width: 100%;
   height: 40px;
   margin: 0;
+  margin-bottom: 20px;
   padding: 11px 5px 11px 5px;
   font-family: "oswaldregular", "Arial", sans-serif;
   font-size: 16px;
@@ -12,7 +13,8 @@
   letter-spacing: normal;
   vertical-align: middle;
   color: #ffffff;
-  background-color: #68b738;
+  background-color: $main-color;
+  border: none;
 }
 
 .button--promo {

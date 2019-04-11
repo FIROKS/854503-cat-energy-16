@@ -1,0 +1,33 @@
+.present {
+  position: relative;
+  width: 280px;
+  height: 289px;
+  margin: 40px 0 35px 0;
+  padding: 0 60px 40px 60px;
+  text-align: center;
+  background: url(../../img/gift-photo-mobile@1x.jpg) no-repeat;
+}
+
+.present__text {
+  margin: 0;
+  padding: 0;
+  padding-top: 190px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.present__gift{
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  margin-left: -28px;
+  width: 56px;
+  height: 61px;
+
+}
+
+.present__gift path {
+  fill: #ffffff;
+}
