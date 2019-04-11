@@ -1,5 +1,6 @@
 .title {
-  margin: 32px 0;
+  margin: 0;
+  margin-bottom: 32px;
   padding: 0;
   font-family: "oswaldregular", "Arial", sans-serif;
   font-size: 36px;
@@ -7,4 +8,21 @@
   font-weight: 400;
   letter-spacing: normal;
   color: #111111;
+  text-transform: none;
+}
+
+.title--sm {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    margin: 0;
+    margin-bottom: 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

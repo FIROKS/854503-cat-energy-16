@@ -19,3 +19,15 @@
   font-size: 14px;
   line-height: 18px;
 }
+
+.button--showall {
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .button--promo {
+    width: 245px;
+    margin-left: 90px;
+  }
+}

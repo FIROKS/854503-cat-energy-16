@@ -3,7 +3,6 @@
 }
 
 .hiw__list {
-  width: 280px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -25,7 +24,7 @@
 .hiw__desc::before {
   position: absolute;
   content: "";
-  top: -2px;
+  top: 0;
   left: 0;
   width: 60px;
   height: 60px;
@@ -35,7 +34,7 @@
 .hiw__desc--leaf::after {
   position: absolute;
   content: "";
-  top: -2px;
+  top: 0;
   left: 0;
   width: 60px;
   height: 60px;
@@ -45,7 +44,7 @@
 .hiw__desc--fork::after {
   position: absolute;
   content: "";
-  top: -2px;
+  top: 0;
   left: 0;
   width: 60px;
   height: 60px;
@@ -55,7 +54,7 @@
 .hiw__desc--powder::after {
   position: absolute;
   content: "";
-  top: -2px;
+  top: 0;
   left: 0;
   width: 60px;
   height: 60px;
@@ -65,9 +64,105 @@
 .hiw__desc--clock::after {
   position: absolute;
   content: "";
-  top: -2px;
+  top: 0;
   left: 0;
   width: 60px;
   height: 60px;
   background: url(../../img/advantage-clock@1x.png) center center no-repeat;
+}
+
+.hiw__number {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .hiw {
+    margin-bottom: 0;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  .hiw__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .hiw__item {
+    position: relative;
+    width: 325px;
+    min-height: 230px;
+    margin-bottom: 55px
+  }
+
+  .hiw__item::before {
+    content: "1";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 325px;
+    font-family: "oswaldregular", "Arial", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f2f2f2;
+  }
+
+  .hiw__item:nth-child(2)::before {
+    content: "2";
+  }
+
+  .hiw__item:nth-child(3)::before {
+    content: "3";
+  }
+
+  .hiw__item:nth-child(4)::before {
+    content: "4";
+  }
+
+  .hiw__desc {
+    padding: 0;
+    padding-top: 90px;
+    width: 205px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .hiw__desc::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hiw__desc::after {
+    top: 10px;
+    left: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hiw {
+    margin-bottom: 30px;
+    border-bottom: none;
+  }
+
+  .hiw__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .hiw__item {
+    width: 245px;
+  }
+
+  .hiw__desc::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hiw__desc::after {
+    top: 10px;
+    left: 10px;
+  }
 }

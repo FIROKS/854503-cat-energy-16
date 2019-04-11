@@ -31,3 +31,42 @@
   text-align: center;
   color: #ffffff;
 }
+
+@media  (min-width: $tablet-width) {
+  .promo {
+    background: transparent;
+  }
+
+  .promo .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo__title {
+    width: 420px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    text-align: left;
+  }
+
+  .promo__slogan {
+    margin-left: 90px;
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+    text-align: left;
+  }
+
+  .promo__img {
+    width: 709px;
+    height: 609px;
+    margin-top: -60px;
+    order: 1;
+    z-index: -1;
+  }
+}
+
