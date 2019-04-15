@@ -5,3 +5,10 @@
   color: #222222;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

@@ -5,6 +5,7 @@
 
 .contacts__wrap {
   margin: 0 auto;
+  padding: 0 20px;
   width: $mobile-width;
 }
 
@@ -46,6 +47,7 @@
 
   .contacts__wrap {
     width: $tablet-width;
+    padding: 0 30px;
   }
 
   .contacts .container {

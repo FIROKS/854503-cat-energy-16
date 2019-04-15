@@ -12,7 +12,8 @@
 }
 
 .title--sm {
-  margin-bottom: 32px;
+  width: 185px;
+  margin: 30px 0;
   font-size: 24px;
   line-height: 24px;
 }
@@ -22,5 +23,18 @@
     margin-bottom: 60px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  .title--sm {
+    width: 515px;
+    margin: 30px 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title--sm {
+    margin-bottom: 50px;
   }
 }
