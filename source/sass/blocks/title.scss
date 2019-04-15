@@ -12,7 +12,6 @@
 }
 
 .title--sm {
-  margin: 0;
   margin-bottom: 32px;
   font-size: 24px;
   line-height: 24px;
@@ -20,7 +19,6 @@
 
 @media (min-width: $tablet-width) {
   .title {
-    margin: 0;
     margin-bottom: 60px;
     font-size: 60px;
     line-height: 60px;

@@ -18,3 +18,16 @@
 .plus::after {
   transform: rotate(90deg);
 }
+
+@media (min-width: $tablet-width) {
+  .plus {
+    width: 61px;
+    height: 61px;
+  }
+
+  .plus::before,
+  .plus::after {
+    top: 30px;
+    width: 61px;
+  }
+}

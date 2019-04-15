@@ -18,3 +18,9 @@
 .copyright-logo__img path {
   fill: #666666;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright-logo {
+    margin-left: 23px;
+  }
+}
