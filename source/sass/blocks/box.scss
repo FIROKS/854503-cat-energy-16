@@ -1,9 +1,10 @@
 .box {
 position: relative;
-width: 125px;
+min-width: 125px;
 min-height: 55px;
 margin: 0;
-padding: 17px 0;
+margin-bottom: 25px;
+padding: 17px 5px;
 border: solid 1px #cdcdcd;
 border-radius: 3px;
 text-align: center;
@@ -24,11 +25,12 @@ text-align: center;
 
 .box__sub {
   position: absolute;
-  width: 85px;
-  bottom: 0;
-  left: 35px;
-  margin: -15px;
-  padding: 5px 16px;
+  bottom: -22px;
+  left: 50%;
+  width: 87px;
+  margin: 0;
+  margin-left: -43px;
+  padding: 8px;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
@@ -36,4 +38,40 @@ text-align: center;
   text-align: center;
   color: #444444;
   background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .box {
+    min-width: 162px;
+    margin-left: 42px;
+    padding: 17px 5px;
+  }
+
+  .box__main {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .box__sub {
+    width: 115px;
+    bottom: -13px;
+    left: 24px;
+    margin: 0;
+    background-color: #ffffff;
+  }
+
+  .box__sub--big{
+    width: 145px;
+    left: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .box {
+    margin-bottom: 50px;
+  }
+
+  .box__sub {
+    background-color: #f2f2f2;
+  }
 }

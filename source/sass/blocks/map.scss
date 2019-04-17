@@ -1,8 +1,14 @@
 .map {
-  // width: 320px;
   min-height: 400px;
   margin: 0 auto;
   padding: 0;
-  background: url(../../img/map-pin.png) center 177px no-repeat, url(../../img/bg-map-mobile@1x.png) center center no-repeat #ffffff;
+  background: url(../../img/map-pin.png) center 177px no-repeat, url(../../img/bg-map-mobile@1x.png) center center no-repeat;
   background-size: 55px 53px, auto auto;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    background: url(../../img/map-pin.png) 51% 160px no-repeat, url(../../img/bg-map-tablet@1x.png) center center no-repeat #ffffff;
+    background-size: 113px 106px, cover;
+  }
 }

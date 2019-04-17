@@ -1,0 +1,11 @@
+.effects__list {
+  @include list-reset;
+}
+
+@media (min-width: $desktop-width) {
+  .effects__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -80px;
+  }
+}
