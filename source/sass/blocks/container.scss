@@ -13,11 +13,19 @@
     width: $tablet-width;
     padding: 0 30px;
   }
+
+  .container--no-pad {
+    padding: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .container {
     width: $desktop-width;
     padding: 0 40px;
+  }
+
+  .container--no-pad {
+    padding: 0;
   }
 }

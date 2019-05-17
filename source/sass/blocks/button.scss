@@ -26,18 +26,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .button {
+    width: 250px;
+    margin-bottom: 40px;
+  }
+
   .button--promo {
     width: 245px;
     height: 52px;
     margin-left: 90px;
+    margin-bottom: 0;
     font-size: 20px;
     line-height: 20px;
     padding: 17px 5px 15px 5px;
-  }
-
-  .button {
-    width: 250px;
-    margin-bottom: 40px;
   }
 }
 
