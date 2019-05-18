@@ -20,6 +20,12 @@
   border-bottom: 1px solid #ededed;
 }
 
+.product__img {
+  // display: block;
+  width: 140px;
+  height: 144px;
+}
+
 .product__info {
   width: 140px;
 }
@@ -63,6 +69,7 @@
     flex-wrap: wrap;
     margin-left: -58px;
   }
+
   .product__item {
     align-items: center;
     flex-direction: column;
@@ -92,15 +99,15 @@
 
   .product__img {
     width: 161px;
-    height: 172px;
+    height: 171px;
     margin-top: -47px;
     margin-bottom: 40px;
   }
 
-  .product__item:nth-child(2n) .product__img {
+  .product__img--big {
     width: 195px;
     height: 208px;
-    margin-top: -82px;
+    margin-top: -80px;
   }
 
   .product__info{

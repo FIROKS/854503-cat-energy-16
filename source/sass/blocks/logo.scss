@@ -7,11 +7,16 @@
   height: 40px;
 }
 
-// @media (min-width: $tablet-width) {
-//   .logo__img {
-//     width: 174px;
-//     height: 59px;
-//     background: url(../../img/logo-tablet.svg) no-repeat;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  .logo__img {
+    width: 174px;
+    height: 59px;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .logo__img {
+    width: 203px;
+    height: 60px;
+  }
+}
