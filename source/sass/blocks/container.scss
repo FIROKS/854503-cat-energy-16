@@ -1,5 +1,6 @@
 .container {
-  width: $mobile-width;
+  width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -15,7 +16,7 @@
   }
 
   .container--no-pad {
-    padding: 0;
+    padding: auto;
   }
 }
 
@@ -23,9 +24,5 @@
   .container {
     width: $desktop-width;
     padding: 0 40px;
-  }
-
-  .container--no-pad {
-    padding: 0;
   }
 }

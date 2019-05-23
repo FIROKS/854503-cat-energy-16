@@ -2,7 +2,6 @@
   min-height: 65px;
   margin: 0;
   padding: 10px 0;
-  background-color: #ffffff;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -54,8 +53,6 @@
   border: none;
 }
 
-
-
 .header__nav-link {
   margin: 0;
   padding: 0;
@@ -74,6 +71,10 @@
     margin-bottom: 55px;
   }
 
+  .form .header {
+    margin-bottom: 55px;
+  }
+
   .header {
     border-bottom: none;
   }
@@ -82,21 +83,31 @@
     flex-direction: row;
   }
 
+  .header__wrap {
+    min-width: 220px;
+    padding-left: 0;
+  }
+
   .header__menu {
     display: none;
   }
 
   .header__nav-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 450px;
+    flex-wrap: wrap;
   }
 
   .header__nav-item {
-    padding: 12px 5px;
+    padding: 12px 0;
+    margin: 0 15px;
     border-bottom: none;
-	}
+  }
+
+  .header__nav-item:last-child {
+    margin-right: 0;
+  }
 
 	.header__nav-link {
     font-family: "oswaldregular", "Arial", sans-serif;
@@ -104,6 +115,21 @@
 		font-size: 18px;
 		line-height: 25px;
 		color: #222222;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    position: relative;
+    padding-top: 55px;
+  }
+
+  .header__nav {
+    width: 720px;
+  }
+
+  .header__nav--list {
+    justify-content: center;
   }
 
   .header__nav-link--current::before {
@@ -115,34 +141,45 @@
     height: 2px;
     background-color: $main-color;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .header {
-    background: url(../../img/index-background-desktop@1x.jpg) 610px 0 no-repeat;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url(../../img/index-background-desktop@2x.jpg);
-      background-size: 720px auto;
-    }
+  .header__nav-link--current-white::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ffffff;
   }
 
-  .header__nav-link--current::before {
-    background-color: #ffffff;
+  .header__nav-item {
+    margin: 0 17px;
   }
 
   .header__nav-link {
     font-family: "oswaldregular", "Arial", sans-serif;
 		font-size: 20px;
 		line-height: 25px;
-		color: #ffffff;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .header__wrap {
-    min-width: 190px;
-    padding: 0;
+  .header__nav-link--white {
+    color: #ffffff;
+  }
+
+  .header__cat {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 720px;
+    height: 696px;
+    background: url(../../img/index-background-desktop@1x.jpg) no-repeat;
+    z-index: -1;
+  }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .header__cat {
+      background-image: url(../../img/index-background-desktop@2x.jpg);
+      background-size: 720px 696px;
+    }
   }
 }
 

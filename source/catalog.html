@@ -14,20 +14,24 @@
     <div class="container container--no-pad">
       <div class="header__wrap">
         <a class="logo">
+          <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="logo__img" src="img/logo-mobile.svg" width="190" height="40" alt="Логотип сайта Cat Energy">
+          </picture>
         </a>
         <div class="header__menu"></div>
       </div>
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a class="header__nav-link">Главная</a>
+            <a href="index.html" class="header__nav-link">Главная</a>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link header__nav-link--current">Каталог продукции</a>
+            <a class="header__nav-link header__nav-link--current">Каталог продукции</a>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Подбор программы</a>
+            <a href="form.html" class="header__nav-link">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -36,10 +40,11 @@
 
   <main class="main">
     <section class="product">
+      <!-- <div class="container"> -->
+
+      <!-- </div> -->
       <div class="container">
         <h1 class="title">Каталог Продукции</h1>
-      </div>
-      <div class="container container--no-pad">
         <ul class="product__list">
           <li class="product__item">
             <picture>
@@ -248,9 +253,10 @@
     </section>
 
     <section class="additional">
-        <h2 class="title title--sm">Дополнительные товары</h2>
         <div class="container">
-        <ul class="additional__list">
+          <h2 class="title title--sm title--line">Дополнительные товары</h2>
+          <div class="additional__present-wrap">
+          <ul class="additional__list">
           <li class="additional__item">
             <div class="additional__wrap">
             <h3 class="additional__title">Сахарозаменитель</h3>
@@ -292,9 +298,11 @@
             <a href="#" class="button">Заказать</a>
           </li>
         </ul>
-        <div class="present">
-          <div class="present__gift"></div>
-          <p class="present__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+
+          <div class="present">
+            <div class="present__gift"></div>
+            <p class="present__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </div>
     </section>
@@ -306,7 +314,13 @@
           <div class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__adress-wrap"> Санкт-Петербург</span></div>
         </div>
       </section>
-      <div class="map"></div>
+      <div class="map">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="map__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Как к нам добраться.">
+        </picture>
+      </div>
       <div class="container">
         <div class="footer__logo-container">
           <a class="logo logo--no-text">

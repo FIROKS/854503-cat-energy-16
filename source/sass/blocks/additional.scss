@@ -39,10 +39,6 @@
 }
 
 @media (min-width:$tablet-width) {
-  .additional__title {
-
-  }
-
   .additional__list {
     margin-bottom: 70px;
   }
@@ -82,11 +78,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .additional .container {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .additional__list {
     margin-bottom: 85px;
   }
@@ -108,6 +99,11 @@
   .additional__wrap1 {
     width: 290px;
     align-items: center;
+  }
+
+  .additional__present-wrap {
+    display: flex;
+    justify-content: space-between;
   }
 
   .additional__title {
