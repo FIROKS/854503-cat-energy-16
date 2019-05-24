@@ -72,10 +72,19 @@
   content: "";
   position: absolute;
   top: 22px;
-  right: 0;
+  left: 100px;
   width: 25px;
   height: 12px;
   background: url(../../img/icon-right-arrow-long.svg) no-repeat;
+}
+
+.article__to-catalog:hover::before,
+.article__to-catalog:focus::before {
+  width: 34px;
+}
+
+.article__to-catalog:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -130,6 +139,10 @@
     font-size: 20px;
     line-height: 20px;
     border: none;
+  }
+
+  .article__to-catalog::before {
+    left: 120px
   }
 }
 

@@ -7,6 +7,18 @@
   vertical-align: bottom;
 }
 
+.choice:active {
+  opacity: 0.3;
+}
+
+.choice:hover .choice__radio {
+  border-color: #bababa;
+}
+
+.choice:hover .choice__check {
+  border-color: #bababa;
+}
+
 .choice__radio{
   position: absolute;
   top: -3px;

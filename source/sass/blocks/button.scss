@@ -15,6 +15,16 @@
   border: none;
 }
 
+.button:hover,
+.button:focus {
+ background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5eaa2f;
+}
+
 .button--promo {
   font-size: 14px;
   line-height: 18px;
@@ -23,6 +33,15 @@
 .button--showall {
   color: #444444;
   background-color: #f2f2f2;
+}
+
+.button--showall:hover,
+.button--showall:focus {
+  background-color: #ebebeb;
+}
+
+.button--showall:active {
+  color: rgba(68, 68, 68, 0.3);
 }
 
 @media (min-width: $tablet-width) {

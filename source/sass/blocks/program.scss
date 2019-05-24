@@ -16,8 +16,8 @@
 }
 
 .program__fieldset--border {
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
 }
 
 .program__list {
@@ -30,6 +30,7 @@
 }
 
 .program__label {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,19 +46,60 @@
   text-transform: inherit;
   color: #444444;
   border: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+
+.program__input:hover {
+ border-color: #cdcdcd;
+}
+
+.program__input:focus {
+  border-width: 2px;
+  border-color: #444444;
+}
+
+.program__input:invalid {
+  border-width: 2px;
+  border-color: #ff8282;
 }
 
 .program__input--email {
   padding-right: 35px;
-  background: url(../../img/icon-mail.svg) 185px 15px no-repeat;
 }
 
-.program__input--tel {
-  padding-right: 35px;
-  background: url(../../img/icon-phone.svg) 175px 15px no-repeat;
+.program__mail {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  width: 18px;
+  height: 15px;
 }
 
+.program__input:focus + .program__mail path,
+.program__input:focus + .program__phone path {
+  fill: $main-color;
+}
 
+.program__input:invalid + .program__mail path,
+.program__input:invalid + .program__phone path {
+  fill: #ff8282;
+}
+
+.program__mail {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  width: 18px;
+  height: 15px;
+}
+
+.program__phone {
+  position: absolute;
+  top: 13px;
+  right: 14px;
+  width: 21px;
+  height: 21px;
+}
 
 .program__comment {
   width: 280px;
@@ -71,6 +113,15 @@
   border: 1px solid #e6e6e6;
   resize: none;
 }
+
+.program__comment:hover {
+  border-color: #cdcdcd;
+ }
+
+ .program__comment:focus {
+   border-width: 2px;
+   border-color: #444444;
+ }
 
 .program__hint {
   margin: 0;
@@ -143,12 +194,12 @@
     border: 1px solid #e6e6e6;
   }
 
-  .program__input--email {
-    background-position: 513px 18px;
+  .program__mail {
+    right: 60px;
   }
 
-  .program__input--tel {
-    background-position: 493px 18px;
+  .program__phone {
+    right: 60px;
   }
 
   .program__comment {
@@ -204,16 +255,36 @@
     margin: 0;
   }
 
+  .program__fieldset--no-marg {
+    margin-bottom: 0;
+  }
+
   .program__fieldset--flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  .program__contacts {
+    display: flex;
+    margin-left: 40px;
+    justify-content: space-between;
+    // width: 100%;
   }
 
   .program__fieldset--flex .program__label {
     width: 570px;
     margin: 0;
     padding: 0;
+  }
+
+  .program__mail {
+    right: 18px;
+  }
+
+  .program__phone {
+    right: 14px;
   }
 
   .program__comment {
