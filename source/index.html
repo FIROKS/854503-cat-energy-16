@@ -19,9 +19,9 @@
           <img class="logo__img" src="img/logo-mobile.svg" width="190" height="40" alt="Логотип сайта Cat Energy" >
         </picture>
       </a>
-      <div class="header__menu"></div>
+      <div class="header__menu header__menu--open"></div>
       </div>
-      <nav class="header__nav">
+      <nav class="header__nav header__nav--open">
         <ul class="header__nav-list">
           <li class="header__nav-item">
             <a class="header__nav-link header__nav-link--white header__nav-link--current-white">Главная</a>
@@ -125,11 +125,10 @@
         </div>
       </div>
         <div class="slider">
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-            <img class="slider__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="До и после." width="311" height="232">
-          </picture>
+          <div class="slider__img">
+            <div class="slider__before"></div>
+            <div class="slider__after"></div>
+          </div>
           <div class="slider__controls">
             <span class="slider__controls-text">Было</span>
             <div class="slider__bar">
@@ -149,15 +148,8 @@
         <div class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__adress-wrap"> Санкт-Петербург</span></div>
       </div>
     </section>
-    <div class="map">
-      <div class="map__wrapper"  id="map"></div>
-      <!-- <div class="container container--no-pad"> -->
-      <!-- <picture>
-        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-        <img class="map__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Как к нам добраться.">
-      </picture> -->
-      <!-- </div> -->
+    <div class="map" id="map">
+      <!-- <div class="map__wrapper"  id="map"></div> -->
     </div>
     <div class="container">
       <div class="footer__logo-container">
@@ -234,8 +226,12 @@
       </div>
     </div>
   </footer>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5lPY9JuogMMVKNKUEpSgwMhLWMzN6bNI"></script>
+  <script src="js/modal.js"></script>
   <script src="js/scripts.js"></script>
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf4CaR8dNJJGN1QCsvrO_qbVPuEBsd-So&callback=initMap">
+  </script>
+  <script src="js/picturefill.min.js"></script>
 </body>
 
 </html>

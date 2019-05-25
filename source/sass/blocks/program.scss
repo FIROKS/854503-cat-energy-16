@@ -49,13 +49,20 @@
   overflow: hidden;
 }
 
+.program__input::-ms-clear {
+  display: none;
+}
+
 .program__input:hover {
  border-color: #cdcdcd;
 }
 
 .program__input:focus {
-  border-width: 2px;
   border-color: #444444;
+}
+
+.program__input:focus {
+  outline: 1px solid #444444;
 }
 
 .program__input:invalid {
@@ -87,7 +94,7 @@
 
 .program__mail {
   position: absolute;
-  top: 15px;
+  top: 19px;
   right: 18px;
   width: 18px;
   height: 15px;
@@ -95,7 +102,7 @@
 
 .program__phone {
   position: absolute;
-  top: 13px;
+  top: 16px;
   right: 14px;
   width: 21px;
   height: 21px;
@@ -116,12 +123,15 @@
 
 .program__comment:hover {
   border-color: #cdcdcd;
- }
+}
 
- .program__comment:focus {
-   border-width: 2px;
-   border-color: #444444;
- }
+.program__comment:focus {
+  border-color: #444444;
+}
+
+.program__comment:focus {
+   outline: 1px solid #444444;
+}
 
 .program__hint {
   margin: 0;
@@ -168,6 +178,7 @@
   }
 
   .program__input {
+    height: 52px;
     font-size: inherit;
     line-height: inherit;
   }

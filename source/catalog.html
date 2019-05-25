@@ -20,9 +20,9 @@
           <img class="logo__img" src="img/logo-mobile.svg" width="190" height="40" alt="Логотип сайта Cat Energy">
           </picture>
         </a>
-        <div class="header__menu"></div>
+        <div class="header__menu header__menu--open"></div>
       </div>
-      <nav class="header__nav">
+      <nav class="header__nav header__nav--open">
         <ul class="header__nav-list">
           <li class="header__nav-item">
             <a href="index.html" class="header__nav-link">Главная</a>
@@ -132,8 +132,8 @@
 
           <li class="product__item">
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+              <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
               <img src="img/fish-big-mobile@1x.jpg" alt="Cat Energy PRO 1000 г со вкусом рыбы" class="product__img product__img--big">
             </picture>
             <div class="product__info">
@@ -314,13 +314,7 @@
           <div class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__adress-wrap"> Санкт-Петербург</span></div>
         </div>
       </section>
-      <div class="map">
-        <picture>
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-          <img class="map__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Как к нам добраться.">
-        </picture>
-      </div>
+      <div class="map" id="map"></div>
       <div class="container">
         <div class="footer__logo-container">
           <a class="logo logo--no-text">
@@ -396,6 +390,12 @@
         </div>
       </div>
     </footer>
+    <script src="js/modal.js"></script>
+    <script src="js/scripts.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf4CaR8dNJJGN1QCsvrO_qbVPuEBsd-So&callback=initMap">
+    </script>
+    <script src="js/picturefill.min.js"></script>
 </body>
 
 </html>
