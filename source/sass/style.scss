@@ -1,3 +1,4 @@
+@import "normalize.scss";
 @import "scaffolding.scss";
 
 @import "variables.scss";
@@ -27,9 +28,10 @@
 @import "blocks/present.scss";
 @import "blocks/form.scss";
 @import "blocks/program.scss";
+@import "blocks/choice.scss";
 
 
-@import "normalize.scss";
+
 
 // @mixin list {
 //   margin: 0;

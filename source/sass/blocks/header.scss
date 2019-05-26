@@ -2,7 +2,6 @@
   min-height: 65px;
   margin: 0;
   padding: 10px 0;
-  background-color: #ffffff;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -29,10 +28,20 @@
   background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 18' style='enable-background:new 0 0 24 18; fill: %23222222;' xml:space='preserve'%3E%3Crect y='16' width='24' height='2'/%3E%3Crect y='8' width='24' height='2'/%3E%3Crect width='24' height='2'/%3E%3C/svg%3E%0A") no-repeat;
 }
 
+.header__menu--open {
+  width: 19px;
+  height: 19px;
+  background: url(../../img/icon-close.svg) no-repeat;
+}
+
 .header__nav {
-  // display: none;
+  display: none;
   margin: 0;
   padding: 0;
+}
+
+.header__nav--open {
+  display: block;
 }
 
 .header__nav-list {
@@ -54,8 +63,6 @@
   border: none;
 }
 
-
-
 .header__nav-link {
   margin: 0;
   padding: 0;
@@ -69,8 +76,21 @@
   background-color: transparent;
 }
 
+.header__nav-link[href]:hover,
+.header__nav-link[href]:focus {
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.header__nav-link[href]:active {
+  color: rgba(17, 17, 17, 0.3);
+}
+
 @media (min-width: $tablet-width) {
   .catalog .header {
+    margin-bottom: 55px;
+  }
+
+  .form .header {
     margin-bottom: 55px;
   }
 
@@ -82,21 +102,35 @@
     flex-direction: row;
   }
 
+  .header__wrap {
+    min-width: 220px;
+    padding-left: 0;
+  }
+
   .header__menu {
     display: none;
   }
 
+  .header__nav {
+    display: block;
+  }
+
   .header__nav-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 450px;
+    flex-wrap: wrap;
   }
 
   .header__nav-item {
-    padding: 12px 5px;
+    padding: 12px 0;
+    margin: 0 15px;
     border-bottom: none;
-	}
+  }
+
+  .header__nav-item:last-child {
+    margin-right: 0;
+  }
 
 	.header__nav-link {
     font-family: "oswaldregular", "Arial", sans-serif;
@@ -104,6 +138,26 @@
 		font-size: 18px;
 		line-height: 25px;
 		color: #222222;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding-top: 0;
+  }
+
+  .header .container {
+    align-items: flex-end;
+  }
+
+  .header__nav {
+    position: relative;
+    width: 720px;
+    padding-top: 55px;
+  }
+
+  .header__nav-list {
+    justify-content: flex-end;
   }
 
   .header__nav-link--current::before {
@@ -115,34 +169,54 @@
     height: 2px;
     background-color: $main-color;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .header {
-    background: url(../../img/index-background-desktop@1x.jpg) 610px 0 no-repeat;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url(../../img/index-background-desktop@2x.jpg);
-      background-size: 720px auto;
-    }
+  .header__nav-link--current-white::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ffffff;
   }
 
-  .header__nav-link--current::before {
-    background-color: #ffffff;
+  .header__nav-item {
+    margin: 0 17px;
   }
 
   .header__nav-link {
     font-family: "oswaldregular", "Arial", sans-serif;
 		font-size: 20px;
 		line-height: 25px;
-		color: #ffffff;
+  }
+
+  .header__nav-link--white {
+    color: #ffffff;
+  }
+
+  .header__nav-link--white[href]:hover,
+  .header__nav-link--white[href]:focus {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .header__nav-link--white[href]:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .header__cat {
+    position: absolute;
+    top: 0;
+    right: -100px;
+    width: 720px;
+    height: 696px;
+    background: url(../../img/index-background-desktop@1x.jpg) no-repeat;
+    z-index: -1;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .header__cat {
+      background-image: url(../../img/index-background-desktop@2x.jpg);
+      background-size: 720px 696px;
+    }
   }
 }
-
-@media (min-width: $tablet-width) {
-  .header__wrap {
-    min-width: 190px;
-    padding: 0;
-  }
-}
-

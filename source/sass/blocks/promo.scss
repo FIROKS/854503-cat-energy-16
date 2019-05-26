@@ -83,4 +83,27 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .promo {
+    position: relative;
+    min-height: 635px;
+  }
+  .promo__title {
+    margin-top: 50px;
+  }
+
+  .promo__img {
+    width: 552px;
+    height: 500px;
+}
+
+  .promo__picture {
+    position: absolute;
+    bottom: 115px;
+    left: 50%;
+    margin-left: -165px;
+  }
+}
+
+
 
