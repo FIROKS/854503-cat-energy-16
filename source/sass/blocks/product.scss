@@ -7,7 +7,6 @@
 .product__item {
   display: flex;
   flex-wrap: wrap;
-  // align-items: center;
   margin: 0;
   margin-bottom: 1px;
   padding: 0;
@@ -24,7 +23,6 @@
 }
 
 .product__img {
-  // display: block;
   width: 140px;
   height: 140px;
 }
@@ -129,7 +127,7 @@
     margin-top: -80px;
   }
 
-  .product__info{
+  .product__info {
     width: 250px;
   }
 
@@ -177,7 +175,7 @@
     margin-bottom: 58px;
   }
 
-  .product__info{
+  .product__info {
     width: 170px;
   }
 

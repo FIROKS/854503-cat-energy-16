@@ -146,15 +146,14 @@
 
   .header__nav-item:first-child {
     margin-left: 0;
-    // margin-right: ;
   }
 
-	.header__nav-link {
+  .header__nav-link {
     font-family: "oswaldregular", "Arial", sans-serif;
     position: relative;
-		font-size: 18px;
-		line-height: 25px;
-		color: #222222;
+    font-size: 18px;
+    line-height: 25px;
+    color: #222222;
   }
 
   .header__nav-link--current::before {
@@ -216,8 +215,8 @@
 
   .header__nav-link {
     font-family: "oswaldregular", "Arial", sans-serif;
-		font-size: 20px;
-		line-height: 25px;
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .header__nav-link--white {
@@ -243,7 +242,8 @@
     z-index: -1;
   }
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
     .header__cat {
       background-image: url(../img/index-background-desktop@2x.jpg);
       background-size: 720px 696px;

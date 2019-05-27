@@ -77,7 +77,8 @@
   display: none;
 }
 
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+@media (min-resolution: $retina-dpi),
+(min-resolution: $retina-dppx) {
   .hiw__desc--clock::after {
     background-image: url(../img/advantage-clock@2x.png);
     background-size: 60px 60px;

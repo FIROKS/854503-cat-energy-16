@@ -48,7 +48,8 @@
   border-radius: 3px;
 }
 
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+@media (min-resolution: $retina-dpi),
+(min-resolution: $retina-dppx) {
   .slider__img {
     background-image: url(../img/before-mobile@2x.png);
     background-size: 319px 242px;
@@ -82,7 +83,6 @@
   }
 
   .slider__controls {
-    // justify-content: space-between;
     position: relative;
     width: 570px;
   }
@@ -151,7 +151,8 @@
     height: 8px;
   }
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
     .slider__before {
       background-image: url(../img/before-tablet@2x.png);
       background-size: 693px 517px;
@@ -199,7 +200,8 @@
     left: 138px;
   }
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
     .slider__before {
       background-image: url(../img/before-desktop@2x.png);
       background-position: 0;
@@ -211,5 +213,4 @@
       background-size: cover;
     }
   }
-
 }

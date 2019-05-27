@@ -22,7 +22,6 @@
 }
 
 .live-example__table {
-  // flex-grow: 1;
   margin: 0 auto;
   margin-bottom: 30px;
   padding: 0;
@@ -35,11 +34,6 @@
   text-align: center;
   color: #111111;
 }
-
-// .live-example__table {
-//   margin: 0 auto;
-//   margin-bottom: 30px;
-// }
 
 @media (min-width: $tablet-width) {
   .live-example {
@@ -81,7 +75,6 @@
     text-align: right;
     margin-bottom: 5px;
   }
-
 }
 
 @media (min-width: $desktop-width) {

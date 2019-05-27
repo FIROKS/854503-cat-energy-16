@@ -1,4 +1,4 @@
-.program__inv{
+.program__inv {
   margin: 0;
   margin-bottom: 39px;
   padding: 0;
@@ -68,7 +68,7 @@
 }
 
 .program__input:hover {
- border-color: #cdcdcd;
+  border-color: #cdcdcd;
 }
 
 .program__input:focus {
@@ -98,13 +98,13 @@
   height: 15px;
 }
 
-.program__input:focus + .program__mail path,
-.program__input:focus + .program__phone path {
+.program__input:focus+.program__mail path,
+.program__input:focus+.program__phone path {
   fill: $main-color;
 }
 
-.program__input:invalid + .program__mail path,
-.program__input:invalid + .program__phone path {
+.program__input:invalid+.program__mail path,
+.program__input:invalid+.program__phone path {
   fill: #ff8282;
 }
 
@@ -146,7 +146,7 @@
 }
 
 .program__comment:focus {
-   outline: 1px solid #444444;
+  outline: 1px solid #444444;
 }
 
 .program__hint {

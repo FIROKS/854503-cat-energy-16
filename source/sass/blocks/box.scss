@@ -1,13 +1,13 @@
 .box {
-position: relative;
-min-width: 125px;
-min-height: 55px;
-margin: 0;
-margin-bottom: 32px;
-padding: 13px 5px;
-border: solid 1px #cdcdcd;
-border-radius: 3px;
-text-align: center;
+  position: relative;
+  min-width: 125px;
+  min-height: 55px;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 13px 5px;
+  border: solid 1px #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
 }
 
 .box__main {
@@ -63,7 +63,7 @@ text-align: center;
     background-color: #ffffff;
   }
 
-  .box__sub--big{
+  .box__sub--big {
     width: 145px;
     left: 8px;
   }
