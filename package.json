@@ -1,32 +1,25 @@
 {
-  "name": "cat-energy-16",
-  "version": "16.0.0",
-  "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
-  "devDependencies": {
-    "autoprefixer": "9.5.x",
-    "browser-sync": "2.26.x",
-    "gulp": "4.0.x",
-    "gulp-plumber": "1.2.x",
-    "gulp-sourcemaps": "2.6.x",
-    "gulp-postcss": "8.0.x",
-    "gulp-sass": "4.0.x",
-    "@htmlacademy/editorconfig-cli": "1.x",
-    "stylelint": "9.10.x",
-    "stylelint-config-htmlacademy": "0.1.x"
-  },
-  "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp css",
-    "start": "gulp start"
-  },
   "browserslist": [
     "last 2 versions",
     "IE 11",
     "Firefox ESR"
   ],
+  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "9.5.x",
+    "browser-sync": "^2.26.5",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-sass": "4.0.x",
+    "gulp-sourcemaps": "2.6.x",
+    "gulp-uglify": "^3.0.2",
+    "stylelint": "9.10.x",
+    "stylelint-config-htmlacademy": "0.1.x"
+  },
   "editorconfig-cli": [
     "*.json",
     "*.js",
@@ -38,7 +31,13 @@
   "engines": {
     "node": "8.15"
   },
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  }
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "editorconfig": "editorconfig-cli",
+    "start": "gulp start",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint"
+  },
+  "version": "16.0.0"
 }

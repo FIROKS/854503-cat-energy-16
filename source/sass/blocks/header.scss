@@ -39,7 +39,7 @@
 .header__menu--open {
   width: 19px;
   height: 19px;
-  background: url(../../img/icon-close.svg) no-repeat;
+  background: url(../img/icon-close.svg) no-repeat;
 }
 
 .header__nav {
@@ -239,13 +239,13 @@
     right: -108px;
     width: 720px;
     height: 696px;
-    background: url(../../img/index-background-desktop@1x.jpg) no-repeat;
+    background: url(../img/index-background-desktop@1x.jpg) no-repeat;
     z-index: -1;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .header__cat {
-      background-image: url(../../img/index-background-desktop@2x.jpg);
+      background-image: url(../img/index-background-desktop@2x.jpg);
       background-size: 720px 696px;
     }
   }

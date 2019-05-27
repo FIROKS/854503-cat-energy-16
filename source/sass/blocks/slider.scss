@@ -8,7 +8,7 @@
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
-  background: url(../../img/before-mobile@1x.png) no-repeat;
+  background: url(../img/before-mobile@1x.png) no-repeat;
   background-size: 312px 242px;
   background-position: -19px -2px;
 }
@@ -50,7 +50,7 @@
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .slider__img {
-    background-image: url(../../img/before-mobile@2x.png);
+    background-image: url(../img/before-mobile@2x.png);
     background-size: 319px 242px;
   }
 }
@@ -72,13 +72,13 @@
   .slider__before {
     width: 355px;
     height: 499px;
-    background: url(../../img/before-tablet@1x.png) 15px no-repeat;
+    background: url(../img/before-tablet@1x.png) 15px no-repeat;
   }
 
   .slider__after {
     width: 320px;
     height: 509px;
-    background: url(../../img/after-tablet@1x.png) -340px 0 no-repeat;
+    background: url(../img/after-tablet@1x.png) -340px 0 no-repeat;
   }
 
   .slider__controls {
@@ -153,13 +153,13 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .slider__before {
-      background-image: url(../../img/before-tablet@2x.png);
+      background-image: url(../img/before-tablet@2x.png);
       background-size: 693px 517px;
     }
 
     .slider__after {
       height: 515px;
-      background-image: url(../../img/after-tablet@2x.png);
+      background-image: url(../img/after-tablet@2x.png);
       background-size: cover;
       background-position: -338px 7px;
     }
@@ -181,12 +181,12 @@
 
   .slider__before {
     width: 350px;
-    background: url(../../img/before-tablet@1x.png) -15px no-repeat;
+    background: url(../img/before-tablet@1x.png) -15px no-repeat;
   }
 
   .slider__after {
     width: 285px;
-    background: url(../../img/after-tablet@1x.png) -365px 0 no-repeat;
+    background: url(../img/after-tablet@1x.png) -365px 0 no-repeat;
   }
 
   .slider__controls {
@@ -201,13 +201,13 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .slider__before {
-      background-image: url(../../img/before-desktop@2x.png);
+      background-image: url(../img/before-desktop@2x.png);
       background-position: 0;
       background-size: cover;
     }
 
     .slider__after {
-      background-image: url(../../img/after-desktop@2x.png);
+      background-image: url(../img/after-desktop@2x.png);
       background-size: cover;
     }
   }

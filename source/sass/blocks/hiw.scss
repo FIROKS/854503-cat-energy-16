@@ -40,7 +40,7 @@
   left: 0;
   width: 60px;
   height: 60px;
-  background: url(../../img/advantage-leaf@1x.png) center center no-repeat;
+  background: url(../img/advantage-leaf@1x.png) center center no-repeat;
 }
 
 .hiw__desc--fork::after {
@@ -50,7 +50,7 @@
   left: 0;
   width: 60px;
   height: 60px;
-  background: url(../../img/advantage-dining@1x.png) center center no-repeat;
+  background: url(../img/advantage-dining@1x.png) center center no-repeat;
 }
 
 .hiw__desc--powder::after {
@@ -60,7 +60,7 @@
   left: 0;
   width: 60px;
   height: 60px;
-  background: url(../../img/advantage-powder@1x.png) center center no-repeat;
+  background: url(../img/advantage-powder@1x.png) center center no-repeat;
 }
 
 .hiw__desc--clock::after {
@@ -70,11 +70,33 @@
   left: 0;
   width: 60px;
   height: 60px;
-  background: url(../../img/advantage-clock@1x.png) center center no-repeat;
+  background: url(../img/advantage-clock@1x.png) center center no-repeat;
 }
 
 .hiw__number {
   display: none;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .hiw__desc--clock::after {
+    background-image: url(../img/advantage-clock@2x.png);
+    background-size: 60px 60px;
+  }
+
+  .hiw__desc--fork::after {
+    background-image: url(../img/advantage-dining@2x.png);
+    background-size: 60px 60px;
+  }
+
+  .hiw__desc--leaf::after {
+    background-image: url(../img/advantage-leaf@2x.png);
+    background-size: 60px 60px;
+  }
+
+  .hiw__desc--powder::after {
+    background-image: url(../img/advantage-powder@2x.png);
+    background-size: 60px 60px;
+  }
 }
 
 @media (min-width: $tablet-width) {

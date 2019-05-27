@@ -52,6 +52,7 @@
 
 .program__input {
   flex-grow: 1;
+  height: 52px;
   margin: 0;
   margin-left: 15px;
   padding: 12px 14px;
@@ -71,11 +72,8 @@
 }
 
 .program__input:focus {
+  border-width: 2px;
   border-color: #444444;
-}
-
-.program__input:focus {
-  outline: 1px solid #444444;
 }
 
 .program__input:invalid {
