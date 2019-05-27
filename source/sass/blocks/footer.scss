@@ -164,7 +164,16 @@ background-color: #f2f2f2;
   .footer__copyright-wrap {
     display: flex;
     align-items: center;
-    width: 163px;
+    width: 165px;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .footer__social-list {
+    margin-left: 410px;
+  }
+
+  // .footer__copyright-wrap {
+  //   width: 165px;
+  // }
+}

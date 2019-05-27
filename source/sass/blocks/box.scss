@@ -63,8 +63,6 @@ text-align: center;
     background-color: #ffffff;
   }
 
-
-
   .box__sub--big{
     width: 145px;
     left: 8px;
@@ -73,10 +71,18 @@ text-align: center;
 
 @media (min-width: $desktop-width) {
   .box {
-    margin-bottom: 50px;
+    margin-bottom: 58px;
+    padding: 19px 5px;
+    padding-top: 14px;
   }
 
   .box__sub {
+    bottom: -15px;
+    left: 21px;
     background-color: #f2f2f2;
+  }
+
+  .box__sub--big {
+    left: 5px;
   }
 }

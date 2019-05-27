@@ -85,6 +85,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .live-example {
+    padding-top: 66px;
+    padding-bottom: 21px;
+  }
+
   .live-example .container {
     display: flex;
     justify-content: space-between;
@@ -95,8 +100,9 @@
   }
 
   .live-example__desc {
-    width: 435px;
-    margin-top: 140px;
+    width: 438px;
+    margin-top: 146px;
+    margin-bottom: 67px;
   }
 
   .live-example__stats {
@@ -106,9 +112,9 @@
 
   .live-example__table {
     flex-grow: 1;
-    width: 340px;
+    width: 332px;
     margin: 0;
-    margin-left: 42px;
+    margin-left: 39px;
   }
 
   .live-example__row {

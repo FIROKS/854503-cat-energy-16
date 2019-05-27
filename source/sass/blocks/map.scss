@@ -26,6 +26,7 @@
 
 @media (min-width: $desktop-width) {
   .map {
+    height: 400px;
     background-image: url(../../img/bg-map-desktop@1x.png);
   }
 

@@ -4,8 +4,8 @@
   flex-direction: column;
   align-items: center;
   width: 280px;
-  height: 289px;
-  margin: 40px 0 35px 0;
+  height: 290px;
+  margin: 41px 0 35px 0;
   padding: 65px 0 40px 0;
   text-align: center;
   background: url(../../img/gift-photo-mobile@1x.jpg) no-repeat;
@@ -40,7 +40,8 @@
     width: 708px;
     height: 200px;
     margin-bottom: 75px;
-    padding: 0 125px 0 90px;
+    padding: 0 118px 0 90px;
+    padding-bottom: 10px;
     background-image: url(../../img/gift-photo-tablet@1x.jpg);
   }
 
@@ -49,7 +50,8 @@
   }
 
   .present__text {
-    width: 165px;
+    width: 168px;
+    padding-top: 9px;
     text-align: left;
   }
 

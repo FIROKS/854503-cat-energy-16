@@ -2,7 +2,7 @@
   display: inline-block;
   width: 100%;
   margin: 0;
-  padding: 12px 5px 11px 5px;
+  padding: 11px 5px 9px 5px;
   font-family: "oswaldregular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -48,7 +48,7 @@
 @media (min-width: $tablet-width) {
   .button {
     width: 250px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   .button--promo {
@@ -69,5 +69,6 @@
 
   .button--promo {
     width: 245px;
+    margin-left: 79px;
   }
 }

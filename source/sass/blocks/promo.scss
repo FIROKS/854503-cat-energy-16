@@ -89,9 +89,16 @@
   .promo {
     position: relative;
     min-height: 635px;
+    margin-bottom: 20px;
   }
   .promo__title {
-    margin-top: 50px;
+    margin-top: 55px;
+    margin-left: 79px;
+  }
+
+  .promo__slogan {
+    margin-left: 79px;
+    margin-bottom: 52px;
   }
 
   .promo__img {
@@ -101,8 +108,8 @@
 
   .promo__picture {
     position: absolute;
-    bottom: 115px;
+    bottom: 111px;
     left: 50%;
-    margin-left: -165px;
+    margin-left: -160px;
   }
 }

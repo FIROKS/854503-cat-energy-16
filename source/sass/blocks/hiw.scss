@@ -145,7 +145,6 @@
 
 @media (min-width: $desktop-width) {
   .hiw {
-    margin-bottom: 30px;
     border-bottom: none;
   }
 
@@ -153,10 +152,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 70px;
   }
 
   .hiw__item {
     width: 245px;
+    margin-bottom: 15px;
   }
 
   .hiw__desc::before {

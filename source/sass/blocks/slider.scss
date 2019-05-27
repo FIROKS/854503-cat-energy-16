@@ -168,13 +168,15 @@
 
 @media (min-width: $desktop-width) {
   .slider {
-    width: 700px;
-    margin-bottom: 65px;
+    width: 637px;
+    margin-bottom: 25px;
+    margin-top: -62px;
     padding: 0;
   }
 
   .slider__img {
     width: 100%;
+    margin-bottom: 41px;
   }
 
   .slider__before {
@@ -183,7 +185,18 @@
   }
 
   .slider__after {
+    width: 285px;
     background: url(../../img/after-tablet@1x.png) -365px 0 no-repeat;
+  }
+
+  .slider__controls {
+    width: 100%;
+    padding-left: 67px;
+  }
+
+  .slider__controls::before {
+    top: 13px;
+    left: 138px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

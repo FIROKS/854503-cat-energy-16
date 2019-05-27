@@ -1,4 +1,7 @@
 .program__inv{
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
   width: 260px;
   font-size: 14px;
   color: #111111;
@@ -22,7 +25,8 @@
 
 .program__list {
   @include list-reset;
-  padding: 25px 0;
+  padding: 17px 0;
+  padding-top: 33px;
 }
 
 .program__item:not(:last-child) {
@@ -37,11 +41,15 @@
   margin-bottom: 14px;
 }
 
+.program__label--no-marg {
+  margin-bottom: 0;
+}
+
 .program__input {
   flex-grow: 1;
   margin: 0;
   margin-left: 15px;
-  padding: 12px 15px;
+  padding: 12px 14px;
   font: inherit;
   text-transform: inherit;
   color: #444444;
@@ -72,6 +80,11 @@
 
 .program__input--email {
   padding-right: 35px;
+  padding-left: 11px;
+}
+
+.program__input--tel {
+  padding-left: 9px;
 }
 
 .program__mail {

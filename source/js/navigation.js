@@ -11,10 +11,3 @@ menu_toggle.addEventListener("click", function(evt) {
   nav_block.classList.toggle("header__nav--open");
   menu_toggle.classList.toggle("header__menu--open");
 });
-
-// menu_toggle.addEventListener("click", function(evt) {
-//   evt.preventDefault();
-//   nav_block.classList.toggle("header__nav--open");
-// })
-
-console.log('sdkjf');
