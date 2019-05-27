@@ -1,6 +1,6 @@
 .map {
   width: 100vw;
-  height: 400px;
+  height: 360px;
   background: url(../../img/bg-map-mobile@1x.png) center no-repeat;
   background-size: cover;
 }
@@ -13,6 +13,7 @@
 
 @media (min-width: $tablet-width) {
   .map {
+    height: 395px;
     background-image: url(../../img/bg-map-tablet@1x.png);
   }
 

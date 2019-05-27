@@ -16,10 +16,20 @@
   height: 40px;
 }
 
+.logo__img--only-text {
+  width: 128px;
+  height: 24px;
+}
+
 @media (min-width: $tablet-width) {
   .logo__img {
     width: 174px;
     height: 59px;
+  }
+
+  .logo__img--only-text {
+    width: 128px;
+    height: 24px;
   }
 }
 
@@ -27,5 +37,10 @@
   .logo__img {
     width: 203px;
     height: 60px;
+  }
+
+  .logo__img--only-text {
+    width: 128px;
+    height: 24px;
   }
 }

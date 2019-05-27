@@ -1,14 +1,16 @@
 .slider {
-  padding: 10px 0 35px 0;
+  padding: 1px 0 37px 0;
 }
 
 .slider__img {
   width: 311px;
   height: 232px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   padding: 0;
   background: url(../../img/before-mobile@1x.png) no-repeat;
+  background-size: 312px 242px;
+  background-position: -19px -2px;
 }
 
 .slider__controls {
@@ -31,7 +33,8 @@
 .slider__bar {
   width: 84px;
   height: 14px;
-  margin: 0 18px;
+  margin: 0 15px;
+  margin-left: 23px;
   padding: 3px 5px;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
@@ -48,16 +51,21 @@
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .slider__img {
     background-image: url(../../img/before-mobile@2x.png);
-    background-size: 311px 232px;
+    background-size: 319px 242px;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .slider {
+    padding-bottom: 68px;
+  }
+
   .slider__img {
     display: flex;
     align-items: flex-end;
     width: 708px;
     height: 517px;
+    margin-bottom: 20px;
     background: none;
   }
 
@@ -69,21 +77,21 @@
 
   .slider__after {
     width: 320px;
-    height: 517px;
+    height: 509px;
     background: url(../../img/after-tablet@1x.png) -340px 0 no-repeat;
   }
 
   .slider__controls {
     // justify-content: space-between;
     position: relative;
-    width: 590px;
+    width: 570px;
   }
 
   .slider__controls::before {
     content: "";
     position: absolute;
-    top: 14px;
-    left: 80px;
+    top: 15px;
+    left: 71px;
     width: 428px;
     height: 6px;
     margin: 0;
@@ -146,12 +154,14 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .slider__before {
       background-image: url(../../img/before-tablet@2x.png);
-      background-size: 708px 517px;
+      background-size: 693px 517px;
     }
 
     .slider__after {
+      height: 515px;
       background-image: url(../../img/after-tablet@2x.png);
       background-size: cover;
+      background-position: -338px 7px;
     }
   }
 }

@@ -2,6 +2,12 @@
   @include list-reset;
 }
 
+@media (min-width: $tablet-width) {
+  .effects {
+    margin-bottom: 51px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .effects__list {
     display: flex;

@@ -1,8 +1,9 @@
 .article {
   width: 280px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   padding: 20px;
+  padding-top: 13px;
   padding-bottom: 0;
   background-color: #f2f2f2;
 }
@@ -10,6 +11,7 @@
 .article__title {
   position: relative;
   margin: 0;
+  margin-bottom: 14px;
   padding: 15px 0;
   padding-left: 70px;
   font-family: "oswaldregular", "Arial", sans-serif;
@@ -25,7 +27,7 @@
   content: "";
   position: absolute;
   top: 10px;
-  left: 0;
+  left: 2px;
   width: 50px;
   height: 50px;
   background: #68b738;
@@ -35,9 +37,9 @@
 .article__title--slim::after {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 7px;
   left: 9px;
-  width: 35px;
+  width: 36px;
   height: 50px;
   background: url(../../img/icon-cat-slim.svg) no-repeat;
 }
@@ -46,10 +48,16 @@
   content: "";
   position: absolute;
   top: 20px;
-  left: -10px;
+  left: -7px;
   width: 67px;
   height: 28px;
   background: url(../../img/icon-cat-pro.svg) no-repeat;
+}
+
+.article__desc {
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
 }
 
 .article__to-catalog {
@@ -72,7 +80,7 @@
   content: "";
   position: absolute;
   top: 22px;
-  left: 100px;
+  left: 97px;
   width: 25px;
   height: 12px;
   background: url(../../img/icon-right-arrow-long.svg) no-repeat;
@@ -91,7 +99,7 @@
   .article {
     width: 708px;
     margin-bottom: 30px;
-    padding: 80px 285px 60px 50px;
+    padding: 72px 275px 40px 54px;
   }
 
   .article:nth-child(2) {
@@ -100,14 +108,14 @@
 
   .article__title {
     padding: 0;
-    margin-bottom: 20px;
-    font-size: 24px;
+    margin-bottom: 25px;
+    font-size: 36px;
     line-height: 37px;
   }
 
   .article__title::before {
-    top: 10px;
-    left: 410px;
+    top: 15px;
+    left: 393px;
     width: 200px;
     height: 200px;
     background: #68b738;
@@ -115,23 +123,27 @@
   }
 
   .article__title--slim::after {
-    top: 10px;
-    left: 450px;
+    top: 5px;
+    left: 423px;
     width: 141px;
     height: 194px;
   }
 
   .article__title--pro::after {
-    top: 50px;
-    left: 370px;
+    top: 59px;
+    left: 358px;
     width: 268px;
     height: 113px;
   }
 
   .article__desc {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .article--pro {
+    padding: 77px 310px 40px 54px;
   }
 
   .article__to-catalog {
@@ -142,7 +154,11 @@
   }
 
   .article__to-catalog::before {
-    left: 120px
+    left: 130px
+  }
+
+  .article__to-catalog--pro::before {
+    left: 125px;
   }
 }
 
