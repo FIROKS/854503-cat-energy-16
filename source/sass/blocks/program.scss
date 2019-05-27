@@ -29,6 +29,11 @@
   padding-top: 33px;
 }
 
+.program__list--flex {
+  padding-top: 5px;
+  padding-bottom: 29px;
+}
+
 .program__item:not(:last-child) {
   margin-bottom: 13px;
 }
@@ -90,8 +95,8 @@
 .program__mail {
   position: absolute;
   top: 15px;
-  right: 18px;
-  width: 18px;
+  right: 16px;
+  width: 16px;
   height: 15px;
 }
 
@@ -115,9 +120,9 @@
 
 .program__phone {
   position: absolute;
-  top: 16px;
-  right: 14px;
-  width: 21px;
+  top: 14px;
+  right: 12px;
+  width: 22px;
   height: 21px;
 }
 
@@ -163,13 +168,15 @@
   .program__inv {
     width: 330px;
     margin-left: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
     font-size: 20px;
     line-height: 30px;
   }
 
   .program__list {
-    margin-left: 40px;
+    margin-left: 28px;
+    padding-top: 29px;
+    padding-bottom: 20px;
   }
 
   .program__list--no-pad {
@@ -192,47 +199,72 @@
 
   .program__input {
     height: 52px;
+    padding-left: 20px;
     font-size: inherit;
     line-height: inherit;
+  }
+
+  .program__input--email {
+    padding-left: 24px;
+  }
+
+  .program__input--tel {
+    padding-left: 17px;
   }
 
   .program__list--flex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: -13px;
+    margin-left: 38px;
   }
 
   .program__list--flex .program__item {
-    width: 50%;
-    margin-bottom: 30px;
+    width: 325px;
+    margin-bottom: 32px;
   }
 
   .program__fieldset {
     margin-bottom: 70px;
   }
 
+  .program__fieldset--add {
+    margin-bottom: 45px;
+  }
+
   .program__fieldset--border {
     width: 630px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 76px;
     border: 1px solid #e6e6e6;
   }
 
+  .program__fieldset--comment {
+    margin-bottom: 64px;
+  }
+
+  .program__fieldset--flex {
+    margin-bottom: 64px;
+  }
+
   .program__mail {
-    right: 60px;
+    right: 57px;
   }
 
   .program__phone {
-    right: 60px;
+    right: 53px;
+    top: 17px;
   }
 
   .program__comment {
     width: 630px;
+    height: 175px;
     margin: 0;
     margin-left: 40px;
   }
 
-  .program__wrap1 {
+  .program__hint-wrap {
     display: flex;
     align-items: center;
     margin-left: 40px;
@@ -248,7 +280,7 @@
 
   .program__hint {
     margin: 0;
-    margin-left: 55px;
+    margin-left: 60px;
     font-size: 16px;
   }
 }
@@ -283,6 +315,14 @@
     margin-bottom: 0;
   }
 
+  .program__fieldset--comment {
+    margin-bottom: 67px;
+  }
+
+  .program__fieldset--add {
+    margin-bottom: 53px;
+  }
+
   .program__fieldset--flex {
     display: flex;
     justify-content: center;
@@ -292,9 +332,8 @@
 
   .program__contacts {
     display: flex;
-    margin-left: 40px;
+    margin-left: 0;
     justify-content: space-between;
-    // width: 100%;
   }
 
   .program__fieldset--flex .program__label {
@@ -308,24 +347,27 @@
   }
 
   .program__phone {
-    right: 14px;
+    right: 18px;
+    top: 15px;
   }
 
   .program__comment {
     width: 100%;
     margin: 0;
+    padding-left: 18px;
   }
 
   .program__list--flex {
-    width: 1130px;
+    justify-content: space-between;
+    width: 100%;
     margin-left: 0;
   }
 
   .program__list--flex .program__item {
-    width: auto;
+    width: 245px;
   }
 
-  .program__wrap1 {
+  .program__hint-wrap {
     margin-left: 0;
     margin-bottom: 80px;
   }
@@ -335,6 +377,6 @@
   }
 
   .program__hint {
-    margin-left: 80px;
+    margin-left: 82px;
   }
 }

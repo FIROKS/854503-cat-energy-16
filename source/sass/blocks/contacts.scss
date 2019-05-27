@@ -4,20 +4,17 @@
 }
 
 .contacts__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 19px;
   width: $mobile-width;
 }
 
 .contacts--white {
   background-color: #ffffff;
   z-index: 1;
-}
-
-.contacts__wrap {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .contacts__title {
@@ -36,8 +33,11 @@
 .contacts__adress {
   width: 140px;
   padding: 0;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  text-transform: none;
+  color: #444444;
 }
 
 @media (min-width: $tablet-width) {
