@@ -1,21 +1,48 @@
-.logo {
-  margin-left: 20px;
+.logo:hover,
+.logo:focus {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
 }
 
 .logo--no-text {
   margin: 0;
 }
 
-.logo__img  {
+.logo__img {
   width: 190px;
   height: 40px;
 }
 
-// @media (min-width: $tablet-width) {
-//   .logo__img {
-//     width: 174px;
-//     height: 59px;
-//     background: url(../../img/logo-tablet.svg) no-repeat;
-//   }
-// }
+.logo__img--only-text {
+  width: 128px;
+  height: 24px;
+}
 
+@media (min-width: $tablet-width) {
+  .logo__img {
+    width: 174px;
+    height: 59px;
+  }
+
+  .logo__img--only-text {
+    width: 128px;
+    height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__img {
+    width: 203px;
+    height: 60px;
+    margin-top: 7px;
+  }
+
+  .logo__img--only-text {
+    width: 128px;
+    height: 24px;
+    margin: 0;
+  }
+}

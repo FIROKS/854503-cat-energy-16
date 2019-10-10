@@ -1,20 +1,25 @@
 .contacts {
+  padding: 28px 0 25px 0;
   background-color: #f2f2f2;
+}
+
+.contacts__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 19px;
+  width: $mobile-width;
 }
 
 .contacts--white {
   background-color: #ffffff;
-}
-
-.contacts .container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  z-index: 1;
 }
 
 .contacts__title {
   width: 125px;
-  margin: 25px 0;
+  margin: 0;
   padding: 0;
   font-family: "oswaldregular", "Arial", sans-serif;
   font-size: 16px;
@@ -27,8 +32,71 @@
 
 .contacts__adress {
   width: 140px;
-  margin: 25px 0;
   padding: 0;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  text-transform: none;
+  color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 0;
+    padding: 65px 0 60px 0;
+  }
+
+  .contacts__wrap {
+    width: $tablet-width;
+    padding: 0 71px;
+  }
+
+  .contacts .container {
+    padding: 0 70px;
+  }
+
+  .contacts__title {
+    width: 160px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__adress {
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .contacts__adress-wrap {
+    display: inline-block;
+    margin-top: 18px;
+    vertical-align: baseline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: absolute;
+    width: 570px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    top: 95px;
+    left: 50%;
+    margin-left: -610px;
+    background-color: #ffffff;
+  }
+
+  .contacts__wrap {
+    align-items: center;
+    width: 570px;
+    height: 200px;
+    padding: 6px 85px 0 75px;
+  }
+
+  .contacts__adress {
+    text-align: left;
+  }
 }

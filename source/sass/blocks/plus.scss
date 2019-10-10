@@ -2,6 +2,7 @@
   position: relative;
   width: 31px;
   height: 31px;
+  margin-bottom: 24px;
 }
 
 .plus::before,
@@ -17,4 +18,18 @@
 
 .plus::after {
   transform: rotate(90deg);
+}
+
+@media (min-width: $tablet-width) {
+  .plus {
+    width: 61px;
+    height: 61px;
+    margin-bottom: 50px;
+  }
+
+  .plus::before,
+  .plus::after {
+    top: 30px;
+    width: 61px;
+  }
 }

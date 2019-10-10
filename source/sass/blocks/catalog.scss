@@ -2,3 +2,9 @@
   font-size: 12px;
   line-height: 16px;
 }
+
+@media (min-width:$tablet-width) {
+  .catalog {
+    font-size: 16px;
+  }
+}

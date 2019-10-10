@@ -1,8 +1,41 @@
 .map {
-  // width: 320px;
-  min-height: 400px;
-  margin: 0 auto;
-  padding: 0;
-  background: url(../../img/map-pin.png) center 177px no-repeat, url(../../img/bg-map-mobile@1x.png) center center no-repeat #ffffff;
-  background-size: 55px 53px, auto auto;
+  width: 100vw;
+  height: 360px;
+  background: url(../img/bg-map-mobile@1x.png) center no-repeat;
+  background-size: cover;
+}
+
+@media (min-resolution: $retina-dpi),
+(min-resolution: $retina-dppx) {
+  .map {
+    background-image: url(../img/bg-map-mobile@2x.png);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 395px;
+    background-image: url(../img/bg-map-tablet@1x.png);
+  }
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    .map {
+      background-image: url(../img/bg-map-tablet@2x.png);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    height: 400px;
+    background-image: url(../img/bg-map-desktop@1x.png);
+  }
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    .map {
+      background-image: url(../img/bg-map-desktop@2x.png);
+    }
+  }
 }

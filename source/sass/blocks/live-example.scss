@@ -1,12 +1,15 @@
 .live-example {
   margin: 0;
   padding: 0;
+  padding-top: 16px;
   background-color: #f2f2f2;
 }
 
 .live-example__desc {
+  width: 275px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-top: -3px;
+  margin-bottom: 24px;
   padding: 0;
 }
 
@@ -15,12 +18,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 25px;
   padding: 0;
 }
 
-.live-example__cost {
-  margin: 0;
+.live-example__table {
+  margin: 0 auto;
+  margin-bottom: 30px;
   padding: 0;
   font-family: "oswaldregular", "Arial", sans-serif;
   font-size: 14px;
@@ -30,4 +33,89 @@
   text-transform: uppercase;
   text-align: center;
   color: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .live-example {
+    padding-top: 12px;
+    background-image: linear-gradient(to top, #f2f2f2 462px, #ffffff 462px);
+  }
+
+  .live-example__column {
+    margin-bottom: 45px;
+  }
+
+  .live-example__desc {
+    width: 680px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 53px;
+    margin-top: 64px;
+  }
+
+  .live-example__stats {
+    justify-content: start;
+    margin-left: -42px;
+  }
+
+  .live-example__table {
+    margin: 0;
+    margin-top: 10px;
+    margin-left: auto;
+    font-size: 20px;
+  }
+
+  .live-example__row {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .live-example__cell {
+    text-align: right;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .live-example {
+    padding-top: 66px;
+    padding-bottom: 21px;
+  }
+
+  .live-example .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .live-example__column {
+    width: 450px;
+  }
+
+  .live-example__desc {
+    width: 438px;
+    margin-top: 146px;
+    margin-bottom: 67px;
+  }
+
+  .live-example__stats {
+    justify-content: space-between;
+    width: 410px;
+  }
+
+  .live-example__table {
+    flex-grow: 1;
+    width: 332px;
+    margin: 0;
+    margin-left: 39px;
+  }
+
+  .live-example__row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .live-example__cell {
+    text-align: left;
+  }
 }

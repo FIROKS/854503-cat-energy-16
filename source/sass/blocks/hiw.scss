@@ -1,9 +1,9 @@
 .hiw {
-  margin-bottom: 42px;
+  margin-top: -5px;
+  margin-bottom: 46px;
 }
 
 .hiw__list {
-  width: 280px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -11,7 +11,7 @@
 
 .hiw__item {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   padding: 0;
 }
 
@@ -19,13 +19,14 @@
   position: relative;
   margin: 0;
   padding: 0;
+  padding-top: 2px;
   padding-left: 80px;
 }
 
 .hiw__desc::before {
   position: absolute;
   content: "";
-  top: -2px;
+  top: 0;
   left: 0;
   width: 60px;
   height: 60px;
@@ -35,39 +36,160 @@
 .hiw__desc--leaf::after {
   position: absolute;
   content: "";
-  top: -2px;
+  top: 0;
   left: 0;
   width: 60px;
   height: 60px;
-  background: url(../../img/advantage-leaf@1x.png) center center no-repeat;
+  background: url(../img/advantage-leaf@1x.png) center center no-repeat;
 }
 
 .hiw__desc--fork::after {
   position: absolute;
   content: "";
-  top: -2px;
+  top: 0;
   left: 0;
   width: 60px;
   height: 60px;
-  background: url(../../img/advantage-dining@1x.png) center center no-repeat;
+  background: url(../img/advantage-dining@1x.png) center center no-repeat;
 }
 
 .hiw__desc--powder::after {
   position: absolute;
   content: "";
-  top: -2px;
+  top: 0;
   left: 0;
   width: 60px;
   height: 60px;
-  background: url(../../img/advantage-powder@1x.png) center center no-repeat;
+  background: url(../img/advantage-powder@1x.png) center center no-repeat;
 }
 
 .hiw__desc--clock::after {
   position: absolute;
   content: "";
-  top: -2px;
+  top: 0;
   left: 0;
   width: 60px;
   height: 60px;
-  background: url(../../img/advantage-clock@1x.png) center center no-repeat;
+  background: url(../img/advantage-clock@1x.png) center center no-repeat;
+}
+
+.hiw__number {
+  display: none;
+}
+
+@media (min-resolution: $retina-dpi),
+(min-resolution: $retina-dppx) {
+  .hiw__desc--clock::after {
+    background-image: url(../img/advantage-clock@2x.png);
+    background-size: 60px 60px;
+  }
+
+  .hiw__desc--fork::after {
+    background-image: url(../img/advantage-dining@2x.png);
+    background-size: 60px 60px;
+  }
+
+  .hiw__desc--leaf::after {
+    background-image: url(../img/advantage-leaf@2x.png);
+    background-size: 60px 60px;
+  }
+
+  .hiw__desc--powder::after {
+    background-image: url(../img/advantage-powder@2x.png);
+    background-size: 60px 60px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hiw {
+    margin-bottom: 0;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  .hiw__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 72px;
+  }
+
+  .hiw__item {
+    position: relative;
+    width: 325px;
+    min-height: 230px;
+    margin-bottom: 87px
+  }
+
+  .hiw__item::before {
+    content: "1";
+    position: absolute;
+    top: -40px;
+    left: 16px;
+    width: 325px;
+    font-family: "oswaldregular", "Arial", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f2f2f2;
+  }
+
+  .hiw__item:nth-child(2)::before {
+    content: "2";
+  }
+
+  .hiw__item:nth-child(3)::before {
+    content: "3";
+  }
+
+  .hiw__item:nth-child(4)::before {
+    content: "4";
+  }
+
+  .hiw__desc {
+    padding: 0;
+    padding-top: 112px;
+    width: 250px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .hiw__desc::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hiw__desc::after {
+    top: 10px;
+    left: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hiw {
+    border-bottom: none;
+  }
+
+  .hiw__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+
+  .hiw__item {
+    width: 245px;
+    margin-bottom: 15px;
+  }
+
+  .hiw__desc::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hiw__desc::after {
+    top: 10px;
+    left: 10px;
+  }
 }

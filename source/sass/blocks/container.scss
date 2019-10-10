@@ -11,5 +11,17 @@
 @media (min-width: $tablet-width) {
   .container {
     width: $tablet-width;
+    padding: 0 30px;
+  }
+
+  .container--no-pad {
+    padding: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-width;
+    padding: 0 40px;
   }
 }

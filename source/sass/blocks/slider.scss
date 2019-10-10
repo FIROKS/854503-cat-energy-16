@@ -1,0 +1,216 @@
+.slider {
+  padding: 1px 0 37px 0;
+}
+
+.slider__img {
+  width: 311px;
+  height: 232px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  background: url(../img/before-mobile@1x.png) no-repeat;
+  background-size: 312px 242px;
+  background-position: -19px -2px;
+}
+
+.slider__controls {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.slider__controls-text {
+  font-family: "oswaldregular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.slider__bar {
+  width: 84px;
+  height: 14px;
+  margin: 0 15px;
+  margin-left: 23px;
+  padding: 3px 5px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+}
+
+.slider__fill {
+  width: 35px;
+  height: 6px;
+  background-color: $main-color;
+  border-radius: 3px;
+}
+
+@media (min-resolution: $retina-dpi),
+(min-resolution: $retina-dppx) {
+  .slider__img {
+    background-image: url(../img/before-mobile@2x.png);
+    background-size: 319px 242px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    padding-bottom: 68px;
+  }
+
+  .slider__img {
+    display: flex;
+    align-items: flex-end;
+    width: 708px;
+    height: 517px;
+    margin-bottom: 20px;
+    background: none;
+  }
+
+  .slider__before {
+    width: 355px;
+    height: 499px;
+    background: url(../img/before-tablet@1x.png) 15px no-repeat;
+  }
+
+  .slider__after {
+    width: 320px;
+    height: 509px;
+    background: url(../img/after-tablet@1x.png) -340px 0 no-repeat;
+  }
+
+  .slider__controls {
+    position: relative;
+    width: 570px;
+  }
+
+  .slider__controls::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 71px;
+    width: 428px;
+    height: 6px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 2.5px;
+    background-color: #dcdcdc;
+  }
+
+  .slider__controls-text {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    font-size: 20px;
+    border-bottom: 1px dotted #bebebe;
+  }
+
+  .slider__controls .slider__controls-text:first-child {
+    margin-right: auto;
+  }
+
+  .slider__controls .slider__controls-text:last-child {
+    margin-left: auto;
+  }
+
+  .slider__controls-text:hover,
+  .slider__controls-text:focus {
+    border-bottom-style: solid;
+  }
+
+  .slider__controls-text:active {
+    border-bottom-style: none;
+  }
+
+  .slider__bar {
+    width: 34px;
+    height: 34px;
+    margin: 0 auto;
+    padding: 12px;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 100%;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    z-index: 1;
+  }
+
+  .slider__bar:hover,
+  .slider__bar:focus {
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .slider__bar:active {
+    box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .slider__fill {
+    width: 8px;
+    height: 8px;
+  }
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    .slider__before {
+      background-image: url(../img/before-tablet@2x.png);
+      background-size: 693px 517px;
+    }
+
+    .slider__after {
+      height: 515px;
+      background-image: url(../img/after-tablet@2x.png);
+      background-size: cover;
+      background-position: -338px 7px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    width: 637px;
+    margin-bottom: 25px;
+    margin-top: -62px;
+    padding: 0;
+  }
+
+  .slider__img {
+    width: 100%;
+    margin-bottom: 41px;
+  }
+
+  .slider__before {
+    width: 350px;
+    background: url(../img/before-tablet@1x.png) -15px no-repeat;
+  }
+
+  .slider__after {
+    width: 285px;
+    background: url(../img/after-tablet@1x.png) -365px 0 no-repeat;
+  }
+
+  .slider__controls {
+    width: 100%;
+    padding-left: 67px;
+  }
+
+  .slider__controls::before {
+    top: 13px;
+    left: 138px;
+  }
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    .slider__before {
+      background-image: url(../img/before-desktop@2x.png);
+      background-position: 0;
+      background-size: cover;
+    }
+
+    .slider__after {
+      background-image: url(../img/after-desktop@2x.png);
+      background-size: cover;
+    }
+  }
+}
