@@ -13,11 +13,12 @@
   height: 38px;
   margin: 0;
   padding: 0;
-}
-
-.copyright-logo__img path {
   fill: #666666;
 }
+
+// .copyright-logo__img use svg{
+//   fill: #666666;
+// }
 
 @media (min-width: $tablet-width) {
   .copyright-logo {

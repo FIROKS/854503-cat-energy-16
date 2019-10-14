@@ -2,8 +2,12 @@
   background-color: #f2f2f2;
 }
 
-.footer__social-item:hover path,
-.footer__social-item:focus path {
+.footer__social-item svg {
+  fill: #666666;
+}
+
+.footer__social-item:hover svg,
+.footer__social-item:focus svg {
   fill: $main-color;
 }
 
@@ -35,7 +39,7 @@
   opacity: 0.3;
 }
 
-.footer__copyright-wrap:hover path {
+.footer__copyright-wrap:hover svg {
   fill: $main-color;
 }
 
