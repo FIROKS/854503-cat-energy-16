@@ -7,12 +7,12 @@ function initMap() {
   });
 
   var marker = new google.maps.Marker({
-  position: uluru,
-  map: map,
-  title: 'cat-energy',
-  icon: {
-    url: "../img/map-pin.png",
-  scaledSize: new google.maps.Size(113, 106)
-  }
-  });
+    position: uluru,
+    map: map,
+    title: 'cat-energy',
+    icon: {
+      url: "../img/map-pin.png",
+      scaledSize: new google.maps.Size(113, 106)
+    }
+    });
   }
