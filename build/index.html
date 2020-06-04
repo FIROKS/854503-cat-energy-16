@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+  <link rel="preload" href="fonts/oswaldregular.woff2">
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="preload" href="css/style.min.css" as="style">
 </head>
@@ -50,9 +51,9 @@
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <picture class="promo__picture">
-          <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp x1, img/index-can-desktop@2x.webp x2">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp x1, img/index-can-tablet@2x.webp x2">
-          <source type="image/webp" srcset="img/index-can-mobile@1x.webp x1, img/index-can-mobile@2x.webp x2">
+          <source type="image/webp" media="(min-width: 1300px)" srcset="./img/index-can-desktop@1x.webp, ./img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.webp, ./img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
 
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
@@ -195,7 +196,7 @@
       <div class="footer__lowest-container">
         <div class="footer__copyright-wrap">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright-link">HTML Academy</a>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright-logo">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright-logo" aria-label="HTML Academy">
             <svg class="copyright-logo__img" width="27" height="34">
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>
